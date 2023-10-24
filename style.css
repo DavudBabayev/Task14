@@ -1,0 +1,439 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.con {
+  max-width: 1500px;
+  margin: auto;
+  padding: 0px 32px;
+}
+
+nav {
+  width: 100%;
+  height: 100px;
+  background-color: #4dabff;
+  position: fixed;
+}
+nav .ndiv {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+nav .ndiv .nd1 {
+  width: 20%;
+  height: 70px;
+  background-color: #007bff;
+}
+nav .ndiv .nd2 {
+  width: 40%;
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav .ndiv .nd2 div {
+  width: 10%;
+  height: 50px;
+  background-color: #007bff;
+}
+nav .ndiv .nd3 {
+  width: 20%;
+  height: 70px;
+  background-color: #007bff;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 1023px) {
+  nav {
+    background-color: #000410;
+  }
+  nav .ndiv .nd2 {
+    display: none;
+  }
+  nav .ndiv .nd2 div {
+    display: none;
+  }
+  nav .ndiv .nd3 {
+    width: 50px;
+    height: 50px;
+  }
+}
+header {
+  width: 100%;
+  background-color: #4dabff;
+}
+header .hdiv {
+  width: 100%;
+  height: 700px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header .hdiv .hd {
+  width: 47%;
+  height: 400px;
+  padding: 50px;
+  background-color: white;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  gap: 10px;
+}
+header .hdiv .hd div {
+  width: 100px;
+  height: 50px;
+  background-color: #007bff;
+}
+
+@media screen and (min-width: 320px) and (max-width: 1023px) {
+  header .hdiv .hd {
+    width: 100%;
+  }
+  header .hdiv .hd1 {
+    display: none;
+  }
+}
+section {
+  width: 100%;
+}
+section .sdiv {
+  width: 100%;
+  height: 700px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+section .sdiv .sd1 {
+  width: 50%;
+  height: 300px;
+  background-color: #b5b5b5;
+}
+section .sdiv .sd2 {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+section .sdiv .sd2 div {
+  width: 25%;
+  height: 200px;
+  background-color: #b5b5b5;
+}
+
+@media screen and (min-width: 320px) and (max-width: 1023px) {
+  section .sdiv {
+    height: 1050px;
+  }
+  section .sdiv .sd1 {
+    width: 100%;
+  }
+  section .sdiv .sd2 {
+    align-items: center;
+    gap: 20px;
+    flex-direction: column;
+  }
+  section .sdiv .sd2 div {
+    width: 50%;
+  }
+}
+main {
+  width: 100%;
+  background-color: #edf6ff;
+}
+main .mdiv {
+  width: 100%;
+  height: 800px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+main .mdiv .md1 {
+  width: 100%;
+  height: 300px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+main .mdiv .md1 div {
+  width: 20%;
+  height: 70px;
+  background-color: #007bff;
+}
+main .mdiv .md2 {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+main .mdiv .md2 .md {
+  width: 47%;
+  height: 400px;
+  padding: 50px;
+  background-color: #4dabff;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  gap: 10px;
+}
+main .mdiv .md2 .md div {
+  width: 100px;
+  height: 50px;
+  background-color: #007bff;
+}
+
+@media screen and (min-width: 320px) and (max-width: 1023px) {
+  main .mdiv {
+    height: 1050px;
+  }
+  main .mdiv .md2 {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  main .mdiv .md2 .md {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  main .mdiv .md1 div {
+    width: 45%;
+  }
+}
+.main1 {
+  width: 100%;
+}
+.main1 .m1div {
+  width: 100%;
+  height: 700px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main1 .m1div div {
+  width: 50%;
+  height: 600px;
+  background-color: #b5b5b5;
+}
+
+@media screen and (min-width: 320px) and (max-width: 1023px) {
+  .main1 .m1div div {
+    width: 100%;
+  }
+}
+.main2 {
+  width: 100%;
+  background-color: #edf6ff;
+}
+.main2 .m2div {
+  width: 100%;
+  height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main2 .m2div .md2 {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.main2 .m2div .md2 .md {
+  width: 47%;
+  height: 400px;
+  padding: 50px;
+  background-color: #4dabff;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  gap: 10px;
+}
+.main2 .m2div .md2 .md div {
+  width: 100px;
+  height: 50px;
+  background-color: #007bff;
+}
+
+@media screen and (min-width: 320px) and (max-width: 1023px) {
+  .main2 .m2div {
+    height: 900px;
+  }
+  .main2 .m2div .md2 {
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .main2 .m2div .md2 .md {
+    width: 100%;
+  }
+}
+.sec2 {
+  width: 100%;
+}
+.sec2 .sdiv {
+  width: 100%;
+  height: 800px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+.sec2 .sdiv .sd1 {
+  width: 50%;
+  height: 300px;
+  background-color: #b5b5b5;
+}
+.sec2 .sdiv .sd2 {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.sec2 .sdiv .sd2 div {
+  width: 25%;
+  height: 400px;
+  background-color: #b5b5b5;
+}
+
+@media screen and (min-width: 320px) and (max-width: 1023px) {
+  .sec2 .sdiv {
+    height: 1600px;
+  }
+  .sec2 .sdiv .sd1 {
+    width: 100%;
+  }
+  .sec2 .sdiv .sd2 {
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .sec2 .sdiv .sd2 div {
+    width: 50%;
+  }
+}
+.sec3 {
+  width: 100%;
+  background-color: #edf6ff;
+}
+.sec3 .sdiv {
+  width: 100%;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+.sec3 .sdiv .sd1 {
+  width: 50%;
+  height: 200px;
+  background-color: #b5b5b5;
+}
+.sec3 .sdiv .sd2 {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.sec3 .sdiv .sd2 div {
+  width: 45%;
+  height: 200px;
+  background-color: #b5b5b5;
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .sec3 .sdiv {
+    height: 700px;
+  }
+  .sec3 .sdiv .sd1 {
+    width: 100%;
+  }
+  .sec3 .sdiv .sd2 {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .sec3 .sdiv .sd2 div {
+    width: 100%;
+  }
+}
+.main3 {
+  width: 100%;
+  background-color: #4dabff;
+}
+.main3 .m2div {
+  width: 100%;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main3 .m2div .md2 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.main3 .m2div .md2 .md {
+  width: 47%;
+  height: 300px;
+  padding: 50px;
+  background-color: #b5b5b5;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 10px;
+}
+.main3 .m2div .md2 .md div {
+  width: 150px;
+  height: 50px;
+  background-color: #007bff;
+}
+
+@media screen and (min-width: 320px) and (max-width: 1023px) {
+  .main3 .m2div .md2 {
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .main3 .m2div .md2 .md {
+    width: 100%;
+  }
+}
+footer {
+  width: 100%;
+  background-color: #000410;
+}
+footer .fdiv {
+  width: 100%;
+  height: 400px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer .fdiv div {
+  width: 30%;
+  height: 300px;
+  background-color: #007bff;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  footer .fdiv {
+    height: 650px;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  footer .fdiv div {
+    width: 45%;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  footer .fdiv {
+    height: 1000px;
+    flex-direction: column;
+    gap: 20px;
+  }
+  footer .fdiv div {
+    width: 100%;
+  }
+}/*# sourceMappingURL=style.css.map */

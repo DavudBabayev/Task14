@@ -1,0 +1,45 @@
+.sec3{
+    width: 100%;
+    background-color: $col4;
+    .sdiv{
+        width: 100%;
+        height: 500px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 50px;
+        .sd1{
+            width: 50%;
+            height: 200px;
+            background-color: $col3;
+        }
+        .sd2{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            div{
+                width: 45%;
+                height: 200px;
+                background-color: $col3;
+            }
+        }
+    }
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+    .sec3{
+        .sdiv{
+            height: 700px;
+            .sd1{
+                width: 100%;
+            }
+            .sd2{
+                flex-direction: column;
+                gap: 20px;
+                div{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

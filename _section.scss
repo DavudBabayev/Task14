@@ -1,0 +1,50 @@
+section {
+    width: 100%;
+
+    .sdiv {
+        width: 100%;
+        height: 700px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 50px;
+
+        .sd1 {
+            width: 50%;
+            height: 300px;
+            background-color: $col3;
+        }
+
+        .sd2 {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+
+            div {
+                width: 25%;
+                height: 200px;
+                background-color: $col3;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 1023px) {
+    section {
+        .sdiv {
+            height: 1050px;
+            .sd1{
+                width: 100%;
+            }
+            .sd2{
+                align-items: center;
+                gap: 20px;
+                flex-direction: column;
+                div{
+                    width: 50%;
+                }
+            }
+        }
+    }
+}

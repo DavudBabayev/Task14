@@ -1,0 +1,38 @@
+header{
+    width: 100%;
+    background-color: $col1;
+    .hdiv{
+        width: 100%;
+        height: 700px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .hd{
+            width: 47%;
+            height: 400px;
+            padding: 50px;
+            background-color: white;
+            display: flex;
+            align-items: flex-end;
+            justify-content: flex-start;
+            gap: 10px;
+            div{
+                width: 100px;
+                height: 50px;
+                background-color: $col2;
+            }
+        }
+    }
+}
+@media screen and (min-width: 320px) and (max-width: 1023px) {
+    header{
+        .hdiv{
+            .hd{
+                width: 100%;
+            }
+            .hd1{
+                display: none;
+            }
+        }
+    }
+}

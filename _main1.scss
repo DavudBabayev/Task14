@@ -1,0 +1,24 @@
+.main1{
+    width: 100%;
+    .m1div{
+        width: 100%;
+        height: 700px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        div{
+            width: 50%;
+            height: 600px;
+            background-color: $col3;
+        }
+    }
+}
+@media screen and (min-width: 320px) and (max-width: 1023px) {
+    .main1{
+        .m1div{
+            div{
+                width: 100%;
+            }
+        }
+    }   
+}
